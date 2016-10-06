@@ -6,4 +6,5 @@ the repository; agreements to review paths serve as a filter to be applied _afte
 
 #### magic behavior
 
-an agreement to review path `/` will accept all automatic path attributions
+an agreement to review path `/` will accept all automatic path attributions, the same behavior will be enforced when blacklisting
+paths for consistency
