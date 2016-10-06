@@ -1,0 +1,302 @@
+---
+excluded_paths:
+  globally:
+  - "pkg/client/clientset_generated"
+  - "Godeps"
+  - "vendor"
+  - "contrib/mesos"
+  - "staging"
+  - "cmd/libs/go2idl/client-gen"
+  - "federation/client/clientset_generated"
+  - "pkg/client/clientset_generated"
+  - "cmd/genswaggertypedocs"
+  - "test/e2e/generated"
+  - ".git"
+  - ".github"
+  - "logo"
+  by_reviewer:
+  - reviewer: piosz
+    paths:
+    - test/kubemark
+    - test
+    - test/kubemark/resources
+    - cluster/addons/dashboard
+    - pkg/fieldpath
+    - test/e2e 
+  - reviewer: luxas
+    paths:
+    - cmd/genswaggertypedocs
+    - pkg/api/service
+    - pkg/util/flowcontrol
+    - pkg/util/keymutex
+    - test/e2e/generated
+  - reviewer: mtaufen
+    paths:
+    - pkg/kubemark
+    - pkg/util/config
+  - reviewer: ingvagabund
+    paths:
+    - pkg/kubelet/cm
+review_agreements:
+- reviewer: abhgupta
+  paths:
+  - /
+- reviewer: van4th
+  paths:
+  - /
+- reviewer: jayunit100
+  paths:
+  - /
+- reviewer: markturansky
+  paths:
+  - /
+- reviewer: mfanjie
+  paths:
+  - /
+- reviewer: resouer
+  paths:
+  - /
+- reviewer: ping035627
+  paths:
+  - pkg/genericapiserver/validation
+  - integration/scheduler
+- reviewer: lixiaobing10051267
+  paths:
+  - docs/devel
+  - docs/getting-started-guides
+  - docs/proposals
+  - docls/user-guide
+  - pkg/apiserver
+  - plugin/cmd/kube-scheduler
+  - pkg/credentialprovider/aws
+  - docs/devel
+  - plugin/pkg/scheduler/algorithm
+- reviewer: bmoylan
+  paths:
+  - cluster/centos
+- reviewer: 249043822 
+  paths:
+  - pkg/quota/evaluator
+- reviewer: jimmidyson
+  paths:
+  - /
+- reviewer: anish
+  paths:
+  - pkg/volume/iscsi
+- reviewer: gmarek
+  paths:
+  - /
+- reviewer: sttts
+  paths:
+  - /
+- reviewer: wojtek-t 
+  paths:
+  - /
+- reviewer: nebril
+  paths:
+  - /
+- reviewer: PiotrProkop
+  paths:
+  - /
+- reviewer: mbohlool
+  paths:
+  - /
+- reviewer: dims
+  paths:
+  - /
+- reviewer: nhlfr
+  paths:
+  - /
+- reviewer: porridge
+  paths:
+  - /
+- reviewer: screeley44
+  paths:
+  - /
+- reviewer: fabianofranz
+  paths:
+  - /
+- reviewer: mbruzek
+  paths:
+  - /
+- reviewer: oszi
+  paths:
+  - cluster/images
+- reviewer: matthewdupre
+  paths:
+  - cluster/addons/calico-policy-controller
+- reviewer: ymqytw
+  paths:
+  - /
+- reviewer: piosz
+  paths:
+  - cluster/addons
+  - cluster/addons/cluster-monitoring
+  - cluster/addons/fluentd-elasticsearch
+  - cluster/addons/fluentd-gcp/fluentd-gcp-image
+  - pkg/apis/autoscaling
+  - pkg/controller/podautoscaler
+- reviewer: guangxuli
+  paths:
+  - /
+- reviewer: feiskyer
+  paths:
+  - /
+- reviewer: dalanlan
+  paths:
+  - /
+- reviewer: lojies
+  paths:
+  - /
+- reviewer: anish
+  paths:
+  - pkg/volume/iscsi
+- reviewer: Starefossen
+  paths:
+  - /
+- reviewer: Pensu
+  paths:
+  - /
+- reviewer: soltysh
+  paths:
+  - pkg/api/testing
+  - pkg/apis/batch
+  - pkg/apiserver/audit
+  - pkg/controller/job
+  - pkg/controller/scheduledjob
+  - pkg/kubectl
+- reviewer: aledbf
+  paths:
+  - /
+- reviewer: taimir
+  paths:
+  - /
+- reviewer: childsb
+  paths:
+  - /
+- reviewer: huang195
+  paths:
+  - /
+- reviewer: hongchaodeng
+  paths:
+  - pkg/fields
+  - pkg/labels
+  - pkg/selection
+  - pkg/storage
+  - pkg/storage/etcd
+  - pkg/storage/etcd3
+  - pkg/storage/storagebackend
+- reviewer: ursuad
+  paths:
+  - /
+- reviewer: bryk
+  paths:
+  - /
+- reviewer: jianhuiz
+  paths:
+  - /
+- reviewer: douglas-gibbons
+  paths:
+  - cluster/addons/addon-manager
+- reviewer: luxas
+  paths:
+  - build/build-image
+  - build/build-image/cross
+  - build/debian-iptables
+  - build/pause
+  - cluster/addons/addon-manager
+  - cluster/addons/dashboard
+  - cluster/images
+  - cluster/images/etcd
+  - cluster/images/flannel
+  - cluster/images/hyperkube
+  - cmd/kubeadm
+  - cmd/kubeadm/app
+  - docs/getting-started-guides
+- reviewer: mtaufen
+  paths:
+  - pkg/kubelet
+  - cmd/kubelet
+- reviewer: adityakali
+  paths:
+  - cluster/gce/gci
+- reviewer: asalkeld
+  paths:
+  - /
+- reviewer: chrislovecnm
+  paths:
+  - /
+- reviewer: zhouhaibing089
+  paths:
+  - /
+- reviewer: hodovska  
+  paths:
+  - pkg/admission
+  - test/integration/replicationcontroller
+- reviewer: ingvagabund 
+  paths:
+  - test/images/mount-tester
+  - plugin/pkg/scheduler
+- reviewer: chakri-nelluri
+  paths:
+  - pkg/volume/flexvolume
+- reviewer: joe2far
+  paths:
+  - /
+- reviewer: euank
+  paths:
+  - /
+- reviewer: philips
+  paths:
+  - /
+- reviewer: caseydavenport
+  paths:
+  - pkg/registry/cachesize
+  - pkg/registry/extensions/networkpolicy
+  - docs/proposals/network-policy.md
+  - cluster/addons/calico-policy-controller
+  - cluster/saltbase/salt/calico
+  - pkg/kubelet/network
+- reviewer: kargakis
+  paths:
+  - pkg/api/events
+  - pkg/controller/deployment
+  - pkg/generated/openapi
+  - pkg/util/integer
+  - pkg/util/replicaset
+  - pkg/controller/disruption
+  - pkg/controller/petset
+  - pkg/kubectl
+- reviewer: soltysh
+  paths:
+  - pkg/api/testing
+  - pkg/apis/batch
+  - pkg/controller/scheduledjob
+  - pkg/registry/cachesize
+- reviewer: dcbw
+  paths:
+  - pkg/kubelet/network
+- reviewer: xiangpengzhao
+  paths:
+  - pkg/util
+- reviewer: ping035627
+  paths:
+  - pkg/genericapiserver/validation 
+  - integration/scheduler
+- reviewer: k82cn
+  paths:
+  - contrib/mesos
+  - examples
+- reviewer: MikeSpreitzer
+  paths:
+  - cluster/ubuntu
+- reviewer: metral
+  paths:
+  - hack/testdata/recursive
+- reviewer: 
+  paths:
+  - cluster/images
+- reviewer: oszi
+  paths: 
+  - cluster/images
+  - cluster/images/etcd
