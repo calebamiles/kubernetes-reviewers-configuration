@@ -1,7 +1,6 @@
 ---
 excluded_paths:
   globally:
-  - "pkg/client/clientset_generated"
   - "Godeps"
   - "vendor"
   - "contrib/mesos"
