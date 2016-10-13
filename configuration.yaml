@@ -1,6 +1,10 @@
 ---
+examine_commits_starting: "21 September 2014"
+activity_window_begins: "16 March 2016"
+opt_in_deadline: "14 October 2016"
 excluded_paths:
   globally:
+  - "pkg/client/clientset_generated"
   - "Godeps"
   - "vendor"
   - "contrib/mesos"
@@ -13,6 +17,7 @@ excluded_paths:
   - ".git"
   - ".github"
   - "logo"
+  - "docs"
   by_reviewer:
   - reviewer: piosz
     paths:
@@ -36,6 +41,8 @@ excluded_paths:
   - reviewer: ingvagabund
     paths:
     - pkg/kubelet/cm
+max_depth: 3
+max_reviewers: 3 
 review_agreements:
 - reviewer: abhgupta
   paths:
@@ -299,3 +306,18 @@ review_agreements:
   paths: 
   - cluster/images
   - cluster/images/etcd
+- reviewer: xiangpengzhao
+  paths:
+  - /
+- reviewer: ericchiang
+  paths:
+  - /
+- reviewer: yifan-gu
+  paths:
+  - /
+- reviewer: aaronlevy
+  paths:
+  - /
+- reviewer: gtank
+  paths:
+  - /
